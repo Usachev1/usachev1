@@ -1,0 +1,577 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 15 px;
+    line-height: 1.6;
+    color: #484c55;
+    
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+  
+/* container */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+/* global */
+.global {
+    width: 100%;
+    height: 175px;
+    margin-top: 100px;
+    flex-direction: column;
+    justify-content: left;
+    
+    background: 
+        url("../images/home/global.png") center
+        no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.global_container {
+    color: #ffffff;
+    width: 100%;
+    height: 130px;
+    max-height: 1069px;
+    margin: 40px;
+    
+}
+
+.global_title{
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1;
+    
+}
+
+
+
+
+/* Header */
+.header {
+    width: 100%;
+    padding-top: 30px;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    
+}
+.header_inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.header_logo {
+    font-size: 30px;
+    font-size: 700;
+    color: #bc9e86;
+    
+}
+
+.nav {
+    font-size: 14px;
+    text-transform: none;
+    
+}
+
+.nav_link{
+    list-style: none;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px;
+    position: relative;
+    
+    color:#484c55;
+    text-decoration: none;
+    
+    transition: color .1s linear;
+    
+}
+.nav_link:after {
+    content: " ";
+    width: 100%;
+    height: 3px;
+    direction: NONE;
+    
+    background-color: #bc9e86;
+    opacity: 0;
+    position: absolute;
+    Top: 100%;
+    left: 0;
+    z-index: 1;    
+    
+    transition: color .1s linear;
+}
+
+.nav_link:hover {
+    color: #bc9e86
+}
+
+.nav_link:hover:after {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+/* section */
+.section {
+    padding: 0px;
+    
+}
+
+.glvaFleo {
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto 90px;
+    text-align:  center;
+
+}
+
+
+.section_suptitle {
+    margin-top: 10px;
+    font-size: 20px;
+    color:414a5a;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    
+}
+
+.section_fleo{
+    font-size: 26px;
+    color:414a5a;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    
+}
+
+.section_text {
+    font-size: 13px;
+    font-weight: 700;
+    color: 414a5a;
+    text-indent: 20px;
+    text-align:  justify;
+}
+
+/* About */
+
+.about {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.about__item {
+    width: 380px;
+    position: relative;
+
+    background-color: #ba9c84;
+}
+
+.about__item:hover .about__img {
+    transform: translate3d(-10px, -10px, 0);
+}
+
+.about__item:hover .about__img img {
+    opacity: .1;
+}
+
+.about__item:hover .about__text {
+    opacity: 1;
+}
+
+.about__img {
+    background: linear-gradient(to bottom, #dbcbbe, #ba9c84);
+
+    transition: transform .2s linear;
+}
+
+.about__img img {
+    display: block;
+    transition: opacity .1s linear;
+}
+
+.about__text {
+    width: 100%;
+
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    opacity: 0;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 2;
+    transform: translate3d(0, -50%, 0);
+
+    transition: opacity .2s linear;
+}
+
+
+
+/* blog */
+
+.delem_text{
+    margin-top:30px;
+     font-size:26px;
+    font-weight: 100;
+    text-align: left;
+        margin-bottom: 10px;
+}
+.blog {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog__item {
+    width: 31%;
+}
+
+.blog__header {
+    position: relative;
+    margin-bottom: 14px;
+}
+
+.blog__photo {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.blog_date {
+    color: #484c55;
+    font-size: 14px;
+      
+}
+
+
+.blog__content {
+    margin-bottom: 14px;
+}
+
+.blog__title {
+    margin-bottom: 10px;
+
+    font-size: 16px;
+    color: #414a5a;
+}
+
+.blog__title a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.blog__title a:hover {
+    text-decoration: underline;
+}
+
+.blog__text {
+    font-size: 14px;
+    color: #848c9a;
+}
+
+.blog__footer {
+    padding-top: 14px;
+    border-top: 1px solid #e5e5e5;
+
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+    color: #999;
+}
+
+
+/* o nas */
+.nas_title {
+    margin-top:20px;
+    font-size:26px;
+    font-weight: 100;
+    text-align: left;
+
+    
+}
+
+.nas_tehno {
+    font-size:20px;
+    font-weight: 100;
+    text-align: left;
+}
+ 
+.nas_text {
+    font-size:14px;
+    font-weight: 100;
+    text-align: justify;
+}
+
+
+    
+
+
+
+/* Footer */
+
+.footer {
+    padding-top: 30px;
+    background-color:#ba9c84;
+width:auto;
+	height: 250px;
+	margin:auto;
+	clear:both;
+
+}
+
+
+
+
+
+.footer_contacts {
+    font-size:22px;
+    font-weight: 700;
+    color: #414a5a;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+
+.footer_text {
+    margin-bottom: 20px;
+    font-size:16px;
+    font-weight: 700;
+    color: #414a5a;
+    text-align: left;
+    
+}
+
+.copyright {
+    padding: 20px 0;
+    border-top: 1px solid #5d5148;
+    text-align: center;
+    font-size: 14px;
+    color: #414a5a;
+    
+}
+
+
+
+
+/* techoo */
+
+.techo_title {
+    font-size: 28px;
+    font-weight: 800;
+    text-align:center;
+    line-height: 1;
+    margin: 20px auto;
+
+}
+
+.onas_text{
+        font-size:20px;
+    font-weight: 100;
+    text-align: justify;
+    margin-top: 10px;
+}
+
+
+.foto {
+  text-align: center
+}
+
+
+/* registration */
+.form {
+  max-width: 320px;
+  padding: 15px;
+  margin: 20px auto;
+  background-color: #ba9c84;
+    margin-bottom:180px;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 10px;
+  
+  border: 1px solid #ccc;
+  
+  font-family: inherit;
+  font-size: 16px;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 8px 10px;
+  
+  border: 0;
+  background-color: #1cbc11;
+  cursor: pointer;
+  
+  font-family: inherit;
+  font-size: 16px;
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: #14a20a;
+}
+
+.glo_title {
+    max-width: 320px;
+    margin: 20px auto;
+}
+
+.glob_title {
+    max-width: 220px;
+    margin: 20px auto;
+}
+
+.servv {
+    margin-bottom: 40px;
+}
+
+
+/* contacts */
+.contacts {
+    width: 100%;
+    max-width: 950px;
+    margin: left;
+    text-align:  left;
+}
+
+.contacts_text {
+     margin-bottom: 32px;
+     font-size: 16px;
+    font-weight: 700;
+    color: 414a5a;
+    text-align:  justify;
+    line-height: 0.5;
+}
+.contacts_te {
+    font-size: 14px;
+}
+
+.contacts_footer {
+    padding-top: 14px;
+    border-top: 1px solid #e5e5e5;
+
+    font-size: 15px;
+    font-weight: 300;
+    color: #999;
+    max-width: 615px;
+}
+
+/* delem */
+
+.otodelem_suptitle {
+    margin-top: 10px;
+    font-size: 25px;
+    color:414a5a;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    
+}
+
+.oto_delem {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-right: 100px;
+}
+
+.globa_title {
+ text-align: center;
+    margin: 20px auto;
+}
+
+/* na glav */
+.button {
+  display: inline-block;
+  background: #ba9c84;
+  color: #fff;
+  padding: 12px;
+  border-radius: 3px;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 100;
+
+}
+
+.clock {
+  margin: 24px;
+  text-align: center;
+}
+
+
+/* apvrs */
+.section_apvrs{
+    font-size: 26px;
+    color:414a5a;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+}
+
+.section_apvtitle{
+        margin-top: 0px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    color:#848c9a;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+}
+
+
+/* table */
+.table {
+    border: 1;
+    width: 100%;
+    table-layout: fixed;
+    height: 100%;
+    text-align: 20px left;
+    border-color: #ba9c84;
+    margin-right: 100px;
+}
+
+.th {
+    font-size: 18px;
+    background-color: #fff;
+    background: #ba9c84;
+    
+}
+
+/* Usachev */
